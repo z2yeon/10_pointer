@@ -7,6 +7,8 @@ int main(void){
 	int i;
 	int grade[5];
 	int sum;
+	int *ptr;
+	ptr=grade; 
 	
 	for(i=0;i<5;i++)
 	{
@@ -16,8 +18,8 @@ int main(void){
 	
 	for(i=0;i<5;i++)
 	{
-		printf("grade[%d]=%d\n",i,grade[i]);
-		sum+=grade[i];
+		printf("grade[%d]=%d\n",i,*(ptr+i));
+		sum+=*(ptr+i);
 	}
 	 
 	 
